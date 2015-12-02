@@ -1,5 +1,5 @@
 
 .htaccess
 *.log
-/day2/input.php
+input.*
 /readme.html
