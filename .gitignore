@@ -1,0 +1,5 @@
+
+.htaccess
+*.log
+/day2/input.php
+/readme.html
