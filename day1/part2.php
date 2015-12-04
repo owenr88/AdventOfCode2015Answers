@@ -1,9 +1,11 @@
 <?php
 
+// http://adventofcode.com/day/1
+
 $input = file_get_contents('input.php');
 $input = str_split($input);
 
-$starting_floor = 0;
+$floor = 0;
 $character = 1;
 
 foreach($input as $char) {
@@ -11,16 +13,16 @@ foreach($input as $char) {
     switch ($char) {
 
         case '(':
-            $starting_floor++;
+            $floor++;
             break;
         
         case ')':
-            $starting_floor--;
+            $floor--;
             break;
 
     }
 
-    if($starting_floor === -1) {
+    if($floor === -1) {
         $basement_pos = $character;
         break;
     }
@@ -29,4 +31,4 @@ foreach($input as $char) {
 
 }
 
-var_dump($starting_floor, $basement_pos);
+var_dump($basement_pos);
