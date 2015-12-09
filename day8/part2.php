@@ -29,8 +29,6 @@ foreach($data as $code) {
 	$characters_of_code += strlen($code);
 	$characters_in_string += strlen($encoded_string);
 
-	echo $encoded_string . ' - ' . strlen($encoded_string) . ' of string. ' . $code . ' - ' . strlen($code) . ' of code' . "\r\n";
-
 };
 
 var_dump( $characters_in_string - $characters_of_code );
